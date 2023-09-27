@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./feedback/css/form-processing.css">
+    <title>Bake</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="" class="header-logo"><img class="header-logo__img" src="./img/logo.svg" alt=""></a>
+                <nav>
+                    <ul class="header-list">
+                        <li class="header-list__item"><a href="tel:1234567890" class="header-list__item__link">Order now</a></li>
+                        <li class="header-list__item"><a href="menu.html" class="header-list__item__link">Menu</a></li>
+                        <li class="header-list__item"><a href="index.html#footer" class="header-list__item__link">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-content__info">
+                        <h1 class="hero-content_info_header">We`re hero to bake you happy!</h1>
+                        <a href="tel:1234567890" class="hero-content_info__bnt">Get some goodies</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="oven">
+            <img src="./img/img2.png" alt="" class="oven-img">
+            <p class="oven-paragraph">Oven-fresh pastries to make you smile</p>
+        </section>
+        <section class="joy">
+            <div class="container">
+                <div class="joy-info">
+                    <div class="joy-info__content">
+                        <h3 class="juy-info__content__header">Spread a little boy</h3>
+                        <p class="juy-info__content__paragraph">Lil Mix Bakery mixes taste with intention/ We know that food is more than sustenance?  it s an exprerience. there s comfort in waarm cake, you in sweet drizzles, and happones in pillow-soft bread. Wew serve oven-fresh pastries meant to make our customers smile. we look forward to your visit, and hope that wewe get to bake you happy!</p>
+                    </div>
+                    <div class="img"><img class="joy-info__img" src="./img/imgh2.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="container">
+                <h3 class="menu-header" id="menu">On the menu</h3>
+                <ul class="menu-items">
+                    <li class="menu-items__item">
+                        <img src="./img/imgcard1.png" alt="" class="menu-items__item__img">
+                        <a class="menu-items__item__header">Just-Baked Pastries</a>
+                        <p class="menu-items__item_paragraph">Made fresh daily from premium ingridients</p>
+                    </li>
+                    <li class="menu-items__item">
+                        <img src="./img/imgcard2.jpg" alt="" class="menu-items__item__img">
+                        <a class="menu-items__item__header">All-Day Breakfast</a>
+                        <p class="menu-items__item_paragraph">Comfort food you can enjoy any time of day</p>
+                    </li>
+                    <li class="menu-items__item">
+                        <img src="./img/imgcard3.jpg" alt="" class="menu-items__item__img">
+                        <a class="menu-items__item__header">Divine Dessserts</a>
+                        <p class="menu-items__item_paragraph">Guaranteed to satisfy every sweet craving</p>
+                    </li>
+                </ul>
+                <a href="menu.html" class="menu-btn">View full menu</a>
+            </div>
+        </section>
+        <section class="behind">
+            <div class="container">
+                <h3 class="behind-header">Behind the scenes</h3>
+                <ul class="behind-list">
+                    <li class="behind-list__item">
+                        <img src="./img/meet.jpg" alt="" class="behind-list__item__img">
+                        <div class="behind-list__item__info">
+                            <h3 class="behind-list__item__info_header1">Meet you bakers!</h3>
+                            <div class="behind-list__item__info__paragraph">Head Pastry Chef Dani Martines leads our team of passionate bakers, committed to their craft.</div>
+                        </div>
+                    </li>
+                    <li class="behind-list__item">
+                        <img src="./img/meet2.jpg" alt="" class="behind-list__item__img2">
+                        <div class="behind-list__item__info">
+                            <h3 class="behind-list__item__info_header">Test Kitchen</h3>
+                            <div class="behind-list__item__info__paragraph">Our team is consrantly cooking up something new in our test kitchen, so we can offer seasonal specials alongside our bestsellers</div>
+                        </div>
+                    </li>
+                    <li class="behind-list__item">
+                        <img src="./img/meet3.png" alt="" class="behind-list__item__img2">
+                        <div class="behind-list__item__info">
+                            <h3 class="behind-list__item__info_header">Food doing good</h3>
+                            <div class="behind-list__item__info__paragraph">We love cooking for you! But we also want to bake others happy. Lil Mix does monthly food drives for local shelters.</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container" id="footer">
+            <div class="footer-info">
+                <h3 class="behind-header">Feedback form</h3>
+
+                <div class="form-container form__wrapper">
+                  <!-- Форма обратной связи -->
+                  <form id="feedback-form" action="/feedback/form-processing.php" enctype="multipart/form-data" novalidate>
+                    <div class="form-row">
+                      <!-- Имя пользователя -->
+                      <div class="form-group">
+                        <label for="name" class="control-label">Name</label>
+                        <input id="name" type="text" name="name" class="form-control" value="" placeholder="Name" minlength="2"
+                          maxlength="30" required="required">
+                        <div class="invalid-feedback"></div>
+                      </div>
+                      <!-- Email пользователя -->
+                      <div class="form-group">
+                        <label for="email" class="control-label">Email</label>
+                        <input id="email" type="email" name="email" required="required" class="form-control" value=""
+                          placeholder="Email-адрес">
+                        <div class="invalid-feedback"></div>
+                      </div>
+                    </div>
+                    <!-- Сообщение пользователя -->
+                    <div class="form-group">
+                      <label for="message" class="control-label">message</label>
+                      <textarea id="message" name="message" class="form-control" rows="3"
+                        placeholder="message" minlength="20" maxlength="500"
+                        required="required"></textarea>
+                      <div class="invalid-feedback"></div>
+                    </div>
+                    <!-- Сообщение об ошибке -->
+                    <div class="form-error form-error_hide">Исправьте данные и отправьте форму ещё раз.</div>
+            
+                    <!-- Кнопка для отправки формы на сервер -->
+                    <div class="form-submit">
+                      <button type="submit">Send</button>
+                    </div>
+            
+                  </form>
+            
+                  <!-- Сообщение об успешной отправки формы -->
+                  <div class="form-success form-success_hide">
+                    <div class="form-success__message">Форма успешно отправлена. Нажмите <button type="button"
+                        class="form-success__btn">здесь</button>, если нужно отправить ещё одну форму.</div>
+                  </div>
+            
+                </div>
+                <h3 class="footer-info__header">Get in touch wits us!</h3>
+                <p class="footer-info__paragraph">123 Anywhere St. Any City, State Cointry 12345</p>
+                <a href="tel:1234567890" class="footer-info__link">(123)456 7890<br><br><br></a>
+                <a href="mailto:hello@reallygreatsite.ru" class="footer-info__link">hello@reallygreatsite.ru</a>
+            </div>
+        <div class="form-error form-error_hide">Исправьте данные и отправьте форму ещё раз.</div>
+            <div class="form-success form-success_hide">
+                <div class="form-success__message">Форма успешно отправлена. Нажмите <button type="button" class="form-success__btn">здесь</button>, если нужно отправить ещё одну форму.</div>
+              </div>
+        </div>
+    </footer>
+    <script src="./feedback/js/form-processing.js"></script>
+  <script>
+    /*
+      attachMaxItems: 3,
+      attachMaxFileSize: 128,
+      attachExt: ['png', 'jpg']
+    */
+
+    ItcSubmitForm.getOrCreateInstance('form');
+
+    document.addEventListener('itc.successSendForm', (e) => {
+      const el = e.target.closest('.form-container').querySelector('.form-success');
+      el.classList.remove('form-success_hide');
+    });
+
+    // при клике на .form-success__btn
+    document.querySelector('.form-success__btn').addEventListener('click', (e) => {
+      const el = e.target.closest('.form-container').querySelector('form');
+      const form = ItcSubmitForm.getOrCreateInstance(el);
+      form.reset();
+      e.target.closest('.form-container').querySelector('.form-success').classList.add('form-success_hide');
+    });
+
+  </script>
+</body>
+</html>
